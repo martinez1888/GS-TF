@@ -2,7 +2,7 @@
 
 resource "aws_db_subnet_group" "rds_sn_group" {
     name       = "${var.rds_sn_group_name}"
-    subnet_ids = ["${var.vpc_sn_priv_az1_id}", "${var.vpc_sn_priv_az2_id}"]
+    subnet_ids = ["${var.vpc_sn_az1_priv2_id}", "${var.vpc_sn_az2_priv2_id}"]
 }
 
 
